@@ -11,7 +11,7 @@ import com.example.chillbeer.data.mappers.toBeerEntity
 import retrofit2.HttpException
 import java.io.IOException
 
-/* This class puts our loaded items from teh API into our local DB and then juts forwards the page
+/* This class puts our loaded items from the API into our local DB and then juts forwards the page
 that we want to load */
 
 @OptIn(ExperimentalPagingApi::class)
