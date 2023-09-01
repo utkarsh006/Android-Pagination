@@ -6,5 +6,5 @@ data class Beer(
     val tagline: String,
     val firstBrewed: String,
     val description: String,
-    val imageUrl: String
+    val imageUrl: String?
 )
