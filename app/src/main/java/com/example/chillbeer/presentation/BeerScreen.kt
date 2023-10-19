@@ -1,5 +1,6 @@
 package com.example.chillbeer.presentation
 
+import android.util.Log
 import android.widget.Toast
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -44,6 +45,7 @@ fun BeerScreen(beers: LazyPagingItems<Beer>) {
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 items(beers.itemSnapshotList.items) { beer ->
+                    Log.d("BEERS", beer.imageUrl.toString())
                     if (beer != null) {
                         BeerItem(
                             beer = beer,
