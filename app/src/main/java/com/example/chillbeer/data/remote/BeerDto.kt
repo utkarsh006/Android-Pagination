@@ -6,5 +6,5 @@ data class BeerDto(
     val tagline: String,
     val description: String,
     val first_brewed: String,
-    val img_url: String
+    val image_url: String
 )

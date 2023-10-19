@@ -8,7 +8,6 @@ interface BeerApi {
     suspend fun getBeers(
         @Query("page") page: Int,
         @Query("per_page") pageCount: Int,
-
     ): List<BeerDto>
 
     companion object {

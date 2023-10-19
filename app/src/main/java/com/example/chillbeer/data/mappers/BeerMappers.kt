@@ -11,7 +11,7 @@ fun BeerDto.toBeerEntity(): BeerEntity {
         tagline = tagline,
         description = description,
         firstBrewed = first_brewed,
-        imageUrl = img_url
+        imageUrl = image_url
     )
 }
 
