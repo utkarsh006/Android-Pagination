@@ -1,6 +1,5 @@
 package com.example.chillbeer.presentation
 
-import android.graphics.fonts.FontStyle
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.IntrinsicSize
@@ -31,7 +30,7 @@ fun BeerItem(
     modifier: Modifier = Modifier
 ) {
     Card(
-        modifier = modifier,
+        modifier = modifier.padding(16.dp),
         elevation = CardDefaults.cardElevation(
             defaultElevation = 4.dp
         )
@@ -69,7 +68,7 @@ fun BeerItem(
                 Text(
                     text = beer.tagline,
                     fontStyle = androidx.compose.ui.text.font.FontStyle.Italic,
-                    color = Color.LightGray,
+                    color = Color.Blue,
                     modifier = Modifier.fillMaxWidth()
                 )
 

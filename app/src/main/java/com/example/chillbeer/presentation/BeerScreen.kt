@@ -45,13 +45,11 @@ fun BeerScreen(beers: LazyPagingItems<Beer>) {
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 items(beers.itemSnapshotList.items) { beer ->
-                    Log.d("BEERS", beer.imageUrl.toString())
-                    if (beer != null) {
-                        BeerItem(
-                            beer = beer,
-                            modifier = Modifier.fillMaxWidth()
-                        )
-                    }
+                    //Log.d("BEERS", beer.imageUrl.toString())
+                    BeerItem(
+                        beer = beer,
+                        modifier = Modifier.fillMaxWidth()
+                    )
                 }
 
                 item {
